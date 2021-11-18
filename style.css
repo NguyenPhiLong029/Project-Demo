@@ -1,0 +1,116 @@
+.group-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.item-left {
+    flex: 50%;
+    border-radius: 0px;
+}
+
+.item-right {
+    flex: 50%;
+    border-radius: unset;
+}
+
+.book {
+    padding: 0 50px;
+}
+
+.input-group > .form-control
+{
+    font-size:20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.icon-calendar {
+    padding: 10px;
+}
+
+.datepicker-days {
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+.name-pages {
+    transition: 0.2s;
+}
+
+.name-pages:hover {
+    transition: .2s;
+    opacity: .7;
+    color: #fff;
+}
+
+.select-box {
+    font-size: 20px;
+}
+
+.dropdown {
+    transition: .6s;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    transition: .6s;    
+}
+  
+.dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+}
+  
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end { 
+        right:0; 
+        left: auto;  
+    }
+	.navbar .nav-item .dropdown-menu {  
+        display:block; 
+        opacity: 0;  
+        visibility: hidden; 
+        transition:.3s; 
+        margin-top:0;  }
+	.navbar .nav-item:hover .nav-link { 
+        color: #fff;  
+    }
+	.navbar .dropdown-menu.fade-down { 
+        top:80%; 
+        transform: rotateX(-75deg); 
+        transform-origin: 0% 0%;
+    }
+	.navbar .dropdown-menu.fade-up { 
+        top:180%; 
+    }
+	.navbar .nav-item:hover .dropdown-menu { 
+        transition: .3s; 
+        opacity:1;
+        visibility: visible; 
+        top:100%; 
+        transform: rotateX(0deg); 
+    }
+}	
